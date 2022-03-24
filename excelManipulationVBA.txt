@@ -1,0 +1,32 @@
+Sub excelManipulation()
+    
+'Transpose Data
+
+    With ActiveSheet
+    lastRow = .Cells(.Rows.Count, "A").End(xlUp).Row
+    End With
+    
+    Sheets(1).Name = "tempData"
+    Rows("1:" & lastRow).Select
+    Selection.Copy
+    Sheets.Add After:=ActiveSheet
+    Sheets(2).Name = "transposedData"
+    Selection.PasteSpecial Paste:=xlPasteAllUsingSourceTheme, Operation:=xlNone _
+        , SkipBlanks:=False, Transpose:=True
+
+'Delete Empty Columns
+
+    Dim MyRange As Range
+    Dim iCounter As Long
+
+    Set MyRange = ActiveSheet.UsedRange
+
+    For iCounter = MyRange.Columns.Count To 1 Step -1
+
+       If Application.CountA(Columns(iCounter).EntireColumn) = 0 Then
+       Columns(iCounter).Delete
+       End If
+
+    Next iCounter
+    
+End Sub

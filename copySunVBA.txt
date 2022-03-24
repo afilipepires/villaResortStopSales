@@ -1,0 +1,15 @@
+Sub copySun(savepath as String)
+'
+' copySun Macro
+'
+'
+    Worksheets("SUN").Activate
+    Range("B104:AH290").Select
+    Selection.Copy
+    Workbooks.Add
+    ActiveSheet.Paste
+    Sheets("Folha1").Select
+    ActiveWorkbook.SaveAs Filename:= savepath
+    ActiveWorkbook.Close (False)
+    
+End Sub

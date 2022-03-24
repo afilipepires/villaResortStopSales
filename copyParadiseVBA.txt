@@ -1,0 +1,15 @@
+Sub copyParadise(savepath as String)
+'
+' copyParadise Macro
+'
+'
+    Worksheets("PARADISE").Activate
+    Range("B70:AH211").Select
+    Selection.Copy
+    Workbooks.Add
+    ActiveSheet.Paste
+    Sheets("Folha1").Select
+    ActiveWorkbook.SaveAs Filename:= savepath
+    ActiveWorkbook.Close (False)
+    
+End Sub

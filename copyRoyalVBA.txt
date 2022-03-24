@@ -1,0 +1,15 @@
+Sub copyRoyal(savepath as String)
+'
+' copyRoyal Macro
+'
+'
+    Worksheets("ROYAL").Activate
+    Range("B14:AH107").Select
+    Selection.Copy
+    Workbooks.Add
+    ActiveSheet.Paste
+    Sheets("Folha1").Select
+    ActiveWorkbook.SaveAs Filename:= savepath
+    ActiveWorkbook.Close (False)
+    
+End Sub

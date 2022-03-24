@@ -1,0 +1,66 @@
+{
+  "name": "villaResortStopSales",
+  "description": "Converter o mapa de allotment Villa Resort no formato STOP SALES para aplicação no portal do Parsys",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.11.3]",
+    "UiPath.Mail.Activities": "[1.12.1]",
+    "UiPath.System.Activities": "[21.10.0]",
+    "UiPath.UIAutomation.Activities": "[21.10.1]",
+    "UiPath.WebAPI.Activities": "[1.9.2]",
+    "UiPathTeam.CSM.Activities": "[1.0.0]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "21.10.0.0",
+  "projectVersion": "1.0.21",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "modernBehavior": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "villaResortStopSales.xaml",
+      "uniqueId": "1845f4d7-e590-4557-93db-0207b9e40a31",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "4ffa0a1e-30d4-4fbb-968f-cf171762e47f",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Legacy"
+}

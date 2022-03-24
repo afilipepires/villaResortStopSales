@@ -1,0 +1,3 @@
+Houve problemas ao carregar o ficheiro villaResortFinal.csv para o portal do Parsys, segue em anexo os ficheiros relevantes do processo.
+
+RPA Robot
